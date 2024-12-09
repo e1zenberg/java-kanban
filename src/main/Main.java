@@ -1,3 +1,10 @@
+package main;
+import taskmanager.Task;
+import taskmanager.Epic;
+import taskmanager.Subtask;
+import taskmanager.TaskManager;
+import taskmanager.TaskStatus;
+
 public class Main {
 
     public static void main(String[] args) {

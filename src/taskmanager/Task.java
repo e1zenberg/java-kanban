@@ -1,3 +1,5 @@
+package taskmanager;
+
 import java.util.Objects;
 public class Task {
     protected int id;
@@ -57,7 +59,7 @@ public class Task {
 
     @Override
     public String toString() {
-        return "Task{" +
+        return "taskmanager.Task{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", description='" + description + '\'' +
