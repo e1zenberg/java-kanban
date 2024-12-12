@@ -1,9 +1,9 @@
 package main;
-import taskmanager.Task;
-import taskmanager.Epic;
-import taskmanager.Subtask;
-import taskmanager.TaskManager;
-import taskmanager.TaskStatus;
+import task.Task;
+import task.Epic;
+import task.Subtask;
+import task.TaskManager;
+import task.TaskStatus;
 
 public class Main {
 
