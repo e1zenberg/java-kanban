@@ -11,7 +11,7 @@ public class InMemoryTaskManager extends TaskManager {
     private final HashMap<Integer, Epic> epics = new HashMap<>();
     private final HashMap<Integer, Subtask> subtasks = new HashMap<>();
     private int nextId = 1;
-    private final HistoryManager historyManager = Managers.getDefaultHistory(); // Менеджер истории
+    private final HistoryManager historyManager = Managers.getDefaultHistory();
 
     private int generateId() {
         return nextId++;
@@ -58,7 +58,7 @@ public class InMemoryTaskManager extends TaskManager {
     public Epic getEpicById(int id) {
         Epic epic = epics.get(id);
         if (epic != null) {
-            historyManager.add(epic); // Добавляем эпик в историю
+            historyManager.add(epic);
         }
         return epic;
     }
