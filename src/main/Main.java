@@ -1,14 +1,20 @@
 package main;
+import package_managers.HistoryManager;
 import task.Task;
 import task.Epic;
 import task.Subtask;
-import task.TaskManager;
+import package_managers.TaskManager;
 import task.TaskStatus;
 
 public class Main {
 
     public static void main(String[] args) {
-        TaskManager taskManager = new TaskManager();
+        TaskManager taskManager = new TaskManager() {
+            @Override
+            public HistoryManager getHistory() {
+                return null;
+            }
+        };
 
         Epic epic1 = new Epic("Путешествия", "Планирование и организация путешествий по миру");
 

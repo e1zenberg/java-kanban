@@ -1,10 +1,15 @@
-package task;
+package package_managers;
+
+import task.Epic;
+import task.Subtask;
+import task.Task;
+import task.TaskStatus;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.stream.Collectors;
-public class TaskManager {
+public abstract class TaskManager {
     private final HashMap<Integer, Task> tasks = new HashMap<>();
     private final HashMap<Integer, Epic> epics = new HashMap<>();
     private final HashMap<Integer, Subtask> subtasks = new HashMap<>();
@@ -140,4 +145,6 @@ public class TaskManager {
             return subtask;
         });
     }
+
+    public abstract HistoryManager getHistory();
 }
