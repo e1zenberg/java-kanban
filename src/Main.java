@@ -1,10 +1,9 @@
-package main;
-import package_managers.HistoryManager;
-import task.Task;
-import task.Epic;
-import task.Subtask;
-import package_managers.TaskManager;
-import task.TaskStatus;
+import managers.HistoryManager;
+import managers.task.Task;
+import managers.task.Epic;
+import managers.task.Subtask;
+import managers.TaskManager;
+import managers.task.TaskStatus;
 
 public class Main {
 
