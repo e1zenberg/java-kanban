@@ -163,19 +163,19 @@ public class InMemoryTaskManager extends TaskManager {
             return;
         }
 
-        boolean allDone = true;
+        boolean allTasksDone = true;
         boolean allNew = true;
 
         for (Subtask subTask : epic.getSubTasks()) {
             if (subTask.getStatus() != TaskStatus.DONE) {
-                allDone = false;
+                allTasksDone = false;
             }
             if (subTask.getStatus() != TaskStatus.NEW) {
                 allNew = false;
             }
         }
 
-        if (allDone) {
+        if (allTasksDone) {
             epic.setStatus(TaskStatus.DONE);
         } else if (allNew) {
             epic.setStatus(TaskStatus.NEW);
